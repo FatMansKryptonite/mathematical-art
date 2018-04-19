@@ -1,2 +1,2 @@
 # Mathematical-Art
-A Simple Fractal Generator
+A Simple Fractal Generator.

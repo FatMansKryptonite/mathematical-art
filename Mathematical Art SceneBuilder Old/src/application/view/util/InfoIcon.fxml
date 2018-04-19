@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.text.Font?>
+
+<StackPane xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Ellipse fill="#0029a4" radiusX="10.0" radiusY="10.0" stroke="#00008a" strokeType="INSIDE" strokeWidth="3.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" ellipsisString="" graphicTextGap="0.0" maxHeight="20.0" maxWidth="20.0" minWidth="20.0" prefHeight="20.0" prefWidth="20.0" text="i" textAlignment="CENTER" textFill="WHITE">
+         <tooltip>
+            <Tooltip fx:id="tip" text="Empty Tooltip" />
+         </tooltip>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</StackPane>

@@ -1,0 +1,128 @@
+.root {
+    -fx-focus-color: ORANGE;
+	-fx-control-inner-background: #1c1f22; 
+	-fx-background-color: 
+        linear-gradient(from 0px 0px to 0px 10px, derive(-fx-control-inner-background, +30%), -fx-control-inner-background); 
+}
+
+.root * {
+	-fx-text-fill: WHITE;	
+}
+
+.root:focused {
+	-fx-background-color: 
+        linear-gradient(from 0px 22px to 0px 32px, -fx-control-inner-background, derive(-fx-control-inner-background, +30%));
+}
+
+.text-field {
+    -fx-text-fill: WHITE;
+	-fx-control-inner-background: #3e464c; 
+    -fx-prompt-text-fill: derive(-fx-control-inner-background,+60%);
+    -fx-background-color: 
+        -fx-control-inner-background,
+        linear-gradient(from 0px 0px to 0px 5px, derive(-fx-control-inner-background, -30%), -fx-control-inner-background);
+}
+
+.text-field:focused {
+    -fx-highlight-fill: -fx-focus-color;
+    -fx-highlight-text-fill: BLACK;
+    -fx-background-color: 
+        -fx-focus-color,
+        -fx-control-inner-background,
+        -fx-faint-focus-color,
+        linear-gradient(from 0px 0px to 0px 5px, derive(-fx-control-inner-background, -30%), -fx-control-inner-background);
+}
+
+.button {
+	-fx-text-fill: WHITE;	
+	-fx-control-inner-background: #3e464c; 
+	-fx-background-color: 
+        -fx-control-inner-background,
+        linear-gradient(from 0% 0% to 0% 40%, derive(-fx-control-inner-background, +30%), -fx-control-inner-background); 
+}
+
+.button:pressed {
+	-fx-background-color:  
+        -fx-control-inner-background,
+        linear-gradient(from 0% 60% to 0% 100%, -fx-control-inner-background, derive(-fx-control-inner-background, +30%)); 
+}
+
+.color-picker * {
+	-fx-text-fill: WHITE;	
+	-fx-control-inner-background: #3e464c; 
+	-fx-background-color: 
+        -fx-control-inner-background,
+        linear-gradient(from 0% 0% to 0% 40%, derive(-fx-control-inner-background, +30%), -fx-control-inner-background);  
+}
+
+.color-picker:pressed * {
+	-fx-background-color:  
+        -fx-control-inner-background,
+        linear-gradient(from 0% 60% to 0% 100%, -fx-control-inner-background, derive(-fx-control-inner-background, +30%));  
+}
+
+.color-picker .arrow {
+	-fx-background-color: WHITE;
+}
+
+.combo-box * {
+	-fx-text-fill: WHITE;	
+	-fx-control-inner-background: #3e464c; 
+	-fx-background-color: 
+        -fx-control-inner-background,
+        linear-gradient(from 0% 0% to 0% 40%, derive(-fx-control-inner-background, +30%), -fx-control-inner-background);  
+}
+
+.combo-box .arrow {
+	-fx-background-color: WHITE;
+}
+
+.combo-box-popup .list-view .list-cell {
+    -fx-background-color: #3e464c;
+    -fx-text-fill: WHITE;
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected {
+    -fx-background-color: #ffcc99;
+    -fx-text-fill: BLACK;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover {
+    -fx-background-color: ORANGE;
+    -fx-text-fill: BLACK;
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected:hover {
+    -fx-background-color: ORANGE;
+    -fx-text-fill: BLACK;
+}
+
+.combo-box-base:pressed * {
+	-fx-background-color:  
+        -fx-control-inner-background,
+        linear-gradient(from 0% 60% to 0% 100%, -fx-control-inner-background, derive(-fx-control-inner-background, +30%));  
+}
+
+.combo-box-popup .scroll-bar .thumb {
+	-fx-control-inner-background: #3e464c; 
+	-fx-background-color: 
+		linear-gradient(from 0% 0% to 0% 40%, derive(-fx-control-inner-background, +30%), -fx-control-inner-background),
+		linear-gradient(from 0% 0% to 0% 40%, -fx-control-inner-background, derive(-fx-control-inner-background, -30%));
+}
+
+.combo-box-popup .scroll-bar .track, .combo-box-popup .scroll-bar .increment-button, .combo-box-popup .scroll-bar .decrement-button {
+	-fx-background-color: #3e464c;
+}
+
+.check-box {
+	-fx-text-fill: WHITE;	
+}
+
+.radio-button {
+	-fx-text-fill: WHITE;	
+}
+
+.progress-bar {
+	-fx-accent: ORANGE;
+	-fx-control-inner-background: #3e464c; 
+}

@@ -1,0 +1,1039 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.text.Font?>
+
+<TabPane tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <tabs>
+    <Tab text="Julia Set">
+      <content>
+        <AnchorPane minHeight="-Infinity" minWidth="-Infinity">
+               <children>
+                  <VBox layoutX="83.0" layoutY="25.0" prefHeight="371.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <GridPane>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" />
+                              <ColumnConstraints hgrow="SOMETIMES" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="-Infinity" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="Iterations:">
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Slider GridPane.columnIndex="1">
+                                 <GridPane.margin>
+                                    <Insets right="5.0" />
+                                 </GridPane.margin>
+                              </Slider>
+                              <TextField GridPane.columnIndex="2">
+                                 <GridPane.margin>
+                                    <Insets right="5.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <StackPane GridPane.columnIndex="3">
+                                 <children>
+                                    <Ellipse fill="#0029a4" radiusX="10.0" radiusY="10.0" stroke="#00008a" strokeType="INSIDE" strokeWidth="3.0" />
+                                    <Label alignment="CENTER" contentDisplay="CENTER" ellipsisString="" graphicTextGap="0.0" maxHeight="20.0" maxWidth="20.0" minWidth="20.0" prefHeight="20.0" prefWidth="20.0" text="i" textAlignment="CENTER" textFill="WHITE">
+                                       <tooltip>
+                                          <Tooltip text="The number of iterations to run." />
+                                       </tooltip>
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </StackPane>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </GridPane>
+                        <GridPane>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" />
+                              <ColumnConstraints hgrow="SOMETIMES" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="-Infinity" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="Power:">
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Slider GridPane.columnIndex="1">
+                                 <GridPane.margin>
+                                    <Insets right="5.0" />
+                                 </GridPane.margin>
+                              </Slider>
+                              <TextField GridPane.columnIndex="2">
+                                 <GridPane.margin>
+                                    <Insets right="5.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <StackPane GridPane.columnIndex="3">
+                                 <children>
+                                    <Ellipse fill="#0029a4" radiusX="10.0" radiusY="10.0" stroke="#00008a" strokeType="INSIDE" strokeWidth="3.0" />
+                                    <Label alignment="CENTER" contentDisplay="CENTER" ellipsisString="" graphicTextGap="0.0" maxHeight="20.0" maxWidth="20.0" minWidth="20.0" prefHeight="20.0" prefWidth="20.0" text="i" textAlignment="CENTER" textFill="WHITE">
+                                       <tooltip>
+                                          <Tooltip text="The power of the Julia equation." />
+                                       </tooltip>
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </StackPane>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </GridPane>
+                        <GridPane>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" />
+                              <ColumnConstraints hgrow="SOMETIMES" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="-Infinity" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="Real Part:">
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Slider GridPane.columnIndex="1">
+                                 <GridPane.margin>
+                                    <Insets right="5.0" />
+                                 </GridPane.margin>
+                              </Slider>
+                              <TextField GridPane.columnIndex="2">
+                                 <GridPane.margin>
+                                    <Insets right="5.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <StackPane GridPane.columnIndex="3">
+                                 <children>
+                                    <Ellipse fill="#0029a4" radiusX="10.0" radiusY="10.0" stroke="#00008a" strokeType="INSIDE" strokeWidth="3.0" />
+                                    <Label alignment="CENTER" contentDisplay="CENTER" ellipsisString="" graphicTextGap="0.0" maxHeight="20.0" maxWidth="20.0" minWidth="20.0" prefHeight="20.0" prefWidth="20.0" text="i" textAlignment="CENTER" textFill="WHITE">
+                                       <tooltip>
+                                          <Tooltip text="The real part of the Julia constant." />
+                                       </tooltip>
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </StackPane>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </GridPane>
+                        <GridPane>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" />
+                              <ColumnConstraints hgrow="SOMETIMES" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="-Infinity" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="Imaginary Part:">
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Slider GridPane.columnIndex="1">
+                                 <GridPane.margin>
+                                    <Insets right="5.0" />
+                                 </GridPane.margin>
+                              </Slider>
+                              <TextField GridPane.columnIndex="2">
+                                 <GridPane.margin>
+                                    <Insets right="5.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <StackPane GridPane.columnIndex="3">
+                                 <children>
+                                    <Ellipse fill="#0029a4" radiusX="10.0" radiusY="10.0" stroke="#00008a" strokeType="INSIDE" strokeWidth="3.0" />
+                                    <Label alignment="CENTER" contentDisplay="CENTER" ellipsisString="" graphicTextGap="0.0" maxHeight="20.0" maxWidth="20.0" minWidth="20.0" prefHeight="20.0" prefWidth="20.0" text="i" textAlignment="CENTER" textFill="WHITE">
+                                       <tooltip>
+                                          <Tooltip text="The imaginary part of the Julia constant." />
+                                       </tooltip>
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </StackPane>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </GridPane>
+                        <VBox minWidth="-Infinity">
+                           <children>
+                              <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="-Infinity" VBox.vgrow="ALWAYS">
+                                 <content>
+                                    <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                       <children>
+                                          <HBox fillHeight="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+                                             <children>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets left="5.0" right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <TextField>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                                <ComboBox prefWidth="150.0">
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ComboBox>
+                                                <Button mnemonicParsing="false" text="Remove Gradient">
+                                                   <HBox.margin>
+                                                      <Insets />
+                                                   </HBox.margin>
+                                                </Button>
+                                             </children>
+                                             <padding>
+                                                <Insets left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox fillHeight="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+                                             <children>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets left="5.0" right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <TextField>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                                <ComboBox prefWidth="150.0">
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ComboBox>
+                                                <Button mnemonicParsing="false" text="Remove Gradient">
+                                                   <HBox.margin>
+                                                      <Insets />
+                                                   </HBox.margin>
+                                                </Button>
+                                             </children>
+                                             <padding>
+                                                <Insets left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox fillHeight="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+                                             <children>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets left="5.0" right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <TextField>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                                <ComboBox prefWidth="150.0">
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ComboBox>
+                                                <Button mnemonicParsing="false" text="Remove Gradient">
+                                                   <HBox.margin>
+                                                      <Insets />
+                                                   </HBox.margin>
+                                                </Button>
+                                             </children>
+                                             <padding>
+                                                <Insets left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox fillHeight="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+                                             <children>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets left="5.0" right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <TextField>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                                <ComboBox prefWidth="150.0">
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ComboBox>
+                                                <Button mnemonicParsing="false" text="Remove Gradient">
+                                                   <HBox.margin>
+                                                      <Insets />
+                                                   </HBox.margin>
+                                                </Button>
+                                             </children>
+                                             <padding>
+                                                <Insets left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox fillHeight="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+                                             <children>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets left="5.0" right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <TextField>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                                <ComboBox prefWidth="150.0">
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ComboBox>
+                                                <Button mnemonicParsing="false" text="Remove Gradient">
+                                                   <HBox.margin>
+                                                      <Insets />
+                                                   </HBox.margin>
+                                                </Button>
+                                             </children>
+                                             <padding>
+                                                <Insets left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox fillHeight="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+                                             <children>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets left="5.0" right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <TextField>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                                <ComboBox prefWidth="150.0">
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ComboBox>
+                                                <Button mnemonicParsing="false" text="Remove Gradient">
+                                                   <HBox.margin>
+                                                      <Insets />
+                                                   </HBox.margin>
+                                                </Button>
+                                             </children>
+                                             <padding>
+                                                <Insets left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox fillHeight="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+                                             <children>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets left="5.0" right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <TextField>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                                <ComboBox prefWidth="150.0">
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ComboBox>
+                                                <Button mnemonicParsing="false" text="Remove Gradient">
+                                                   <HBox.margin>
+                                                      <Insets />
+                                                   </HBox.margin>
+                                                </Button>
+                                             </children>
+                                             <padding>
+                                                <Insets left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox fillHeight="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+                                             <children>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets left="5.0" right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <TextField>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                                <ComboBox prefWidth="150.0">
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ComboBox>
+                                                <Button mnemonicParsing="false" text="Remove Gradient">
+                                                   <HBox.margin>
+                                                      <Insets />
+                                                   </HBox.margin>
+                                                </Button>
+                                             </children>
+                                             <padding>
+                                                <Insets left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox fillHeight="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+                                             <children>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets left="5.0" right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <TextField>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                                <ComboBox prefWidth="150.0">
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ComboBox>
+                                                <Button mnemonicParsing="false" text="Remove Gradient">
+                                                   <HBox.margin>
+                                                      <Insets />
+                                                   </HBox.margin>
+                                                </Button>
+                                             </children>
+                                             <padding>
+                                                <Insets left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox fillHeight="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+                                             <children>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets left="5.0" right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <TextField>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                                <ComboBox prefWidth="150.0">
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ComboBox>
+                                                <Button mnemonicParsing="false" text="Remove Gradient">
+                                                   <HBox.margin>
+                                                      <Insets />
+                                                   </HBox.margin>
+                                                </Button>
+                                             </children>
+                                             <padding>
+                                                <Insets left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox fillHeight="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+                                             <children>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets left="5.0" right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <TextField>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                                <ComboBox prefWidth="150.0">
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ComboBox>
+                                                <Button mnemonicParsing="false" text="Remove Gradient">
+                                                   <HBox.margin>
+                                                      <Insets />
+                                                   </HBox.margin>
+                                                </Button>
+                                             </children>
+                                             <padding>
+                                                <Insets left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox fillHeight="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+                                             <children>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets left="5.0" right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <TextField>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                                <ComboBox prefWidth="150.0">
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ComboBox>
+                                                <Button mnemonicParsing="false" text="Remove Gradient">
+                                                   <HBox.margin>
+                                                      <Insets />
+                                                   </HBox.margin>
+                                                </Button>
+                                             </children>
+                                             <padding>
+                                                <Insets left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox fillHeight="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+                                             <children>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets left="5.0" right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <TextField>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                                <ComboBox prefWidth="150.0">
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ComboBox>
+                                                <Button mnemonicParsing="false" text="Remove Gradient">
+                                                   <HBox.margin>
+                                                      <Insets />
+                                                   </HBox.margin>
+                                                </Button>
+                                             </children>
+                                             <padding>
+                                                <Insets left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox fillHeight="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+                                             <children>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets left="5.0" right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <TextField>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                                <ComboBox prefWidth="150.0">
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ComboBox>
+                                                <Button mnemonicParsing="false" text="Remove Gradient">
+                                                   <HBox.margin>
+                                                      <Insets />
+                                                   </HBox.margin>
+                                                </Button>
+                                             </children>
+                                             <padding>
+                                                <Insets left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox fillHeight="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+                                             <children>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets left="5.0" right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <TextField>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                                <ComboBox prefWidth="150.0">
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ComboBox>
+                                                <Button mnemonicParsing="false" text="Remove Gradient">
+                                                   <HBox.margin>
+                                                      <Insets />
+                                                   </HBox.margin>
+                                                </Button>
+                                             </children>
+                                             <padding>
+                                                <Insets left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox fillHeight="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+                                             <children>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets left="5.0" right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <TextField>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                                <ComboBox prefWidth="150.0">
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ComboBox>
+                                                <Button mnemonicParsing="false" text="Remove Gradient">
+                                                   <HBox.margin>
+                                                      <Insets />
+                                                   </HBox.margin>
+                                                </Button>
+                                             </children>
+                                             <padding>
+                                                <Insets left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox fillHeight="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+                                             <children>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets left="5.0" right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <TextField>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                                <ComboBox prefWidth="150.0">
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ComboBox>
+                                                <Button mnemonicParsing="false" text="Remove Gradient">
+                                                   <HBox.margin>
+                                                      <Insets />
+                                                   </HBox.margin>
+                                                </Button>
+                                             </children>
+                                             <padding>
+                                                <Insets left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox fillHeight="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+                                             <children>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets left="5.0" right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <ColorPicker>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ColorPicker>
+                                                <TextField>
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                                <ComboBox prefWidth="150.0">
+                                                   <opaqueInsets>
+                                                      <Insets right="5.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                </ComboBox>
+                                                <Button mnemonicParsing="false" text="Remove Gradient">
+                                                   <HBox.margin>
+                                                      <Insets />
+                                                   </HBox.margin>
+                                                </Button>
+                                             </children>
+                                             <padding>
+                                                <Insets left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="5.0" right="13.0" />
+                                       </padding>
+                                    </VBox>
+                                 </content>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
+                              </ScrollPane>
+                              <ImageView fitHeight="98.0" fitWidth="220.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Mathematical%20Art/images/3.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Button mnemonicParsing="false" text="Add Gradient">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
